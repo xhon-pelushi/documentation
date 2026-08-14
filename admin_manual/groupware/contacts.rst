@@ -54,6 +54,21 @@ Address Book Sync
 
 The address book is updated automatically with every added, modified, disabled or removed user. Admins can also trigger a full rewrite of the address book :ref:`with occ<dav-sync-system-address-book>`.
 
+Organization chart
+------------------
+
+The Contacts app can display an **Organization chart** built from the **Manager**, **Role**, and
+**Organisation** account properties of users.
+
+* Administrators set a user's manager on the *User management* page. See the
+  :ref:`Manager property<account-manager-property>` for details.
+* Users set their own **Role** (job title) and **Organisation** in **Personal settings** ->
+  **Personal info**.
+
+.. note:: The organization chart is only built from accounts in the system address book. Contacts
+   from other, personal, or shared address books are not included, even if a manager, role, or
+   organisation is set on their vCard.
+
 Shared items
 ------------
 
