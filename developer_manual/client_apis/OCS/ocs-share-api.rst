@@ -20,6 +20,8 @@ Get all shares from the user.
 * Syntax: /shares
 * Method: GET
 
+* URL Arguments: shared_with_me - (boolean) returns the shares shared with the current user instead of the shares owned by the current user
+
 * Result: XML with all shares
 
 Statuscodes:
