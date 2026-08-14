@@ -11,15 +11,20 @@ server, or using commercial file-sharing services.
 Setting up your own file drop
 -----------------------------
 
-In the Files app, create or choose the folder to receive anonymous uploads:
+In the Files app, create or choose the folder to receive anonymous uploads, then click
+the **Share** icon on that folder to open the sharing panel:
 
 .. image:: ../images/anonym_click_sharing.png
    :alt: Sharing settings panel for a folder
 
-Enable **Share Link**, **Allow editing**, and **Hide file listing**:
+Click **Share link** to create a public link, then open its **...** menu and select the
+**File drop (upload only)** permission:
 
-.. image:: ../images/anonym_hide_file_listing.png
-   :alt: Share link settings with hide file listing enabled
+.. image:: ../images/sharing_public_folder.png
+   :alt: Public folder share options with the File drop permission selected
+
+With **File drop**, uploaders cannot see, download, or modify files that are already in
+the folder — they can only add new files to it.
 
 Now you can send the link to the upload folder manually or by using the
 Nextcloud send function, if your administrator has enabled it.
