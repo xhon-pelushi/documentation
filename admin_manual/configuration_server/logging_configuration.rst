@@ -45,6 +45,15 @@ viewed using the log viewer on your Admin page. By default, a log
 file named **nextcloud.log** will be created in the directory which has
 been configured by the **datadirectory** parameter in :file:`config/config.php`.
 
+.. note::
+
+   The **logfile** parameter is optional and does not need to be set for a standard
+   installation, as it already defaults to :file:`[datadirectory]/nextcloud.log`. If you
+   do set it, use an absolute path: a relative path is resolved relative to the current
+   working directory (typically the Nextcloud installation directory), not the data
+   directory, which can leave the log file somewhere the update's integrity check does
+   not expect it. See :doc:`config_sample_php_parameters` for details.
+
 The desired date format can optionally be defined using the **logdateformat** parameter in :file:`config/config.php`.
 By default the `PHP date function`_ parameter ``c`` is used, and therefore the
 date/time is written in the format ``2013-01-10T15:20:25+02:00``. By using the
@@ -54,7 +63,6 @@ date format in the example below, the date/time format will be written in the fo
 ::
 
     "log_type" => "file",
-    "logfile" => "nextcloud.log",
     "loglevel" => 3,
     "logdateformat" => "F d, Y H:i:s",
 
